@@ -66,7 +66,7 @@ def get_LMSD(sdffile):
             compounds_info.append(compound_dic)
     
     index = ['LM.Category', 'LM.Main Class', 'LM.Sub Class', 'LM.Lv4 Class', 'Lipid Maps ID']
-    df = pd.DataFrame(compounds_info).set_index(index).sort_values(index)
+    df = pd.DataFrame(compounds_info).set_index(index).sort_values(index).reset_index().set_index('Lipid Maps ID')
     df.to_excel(sdffile + '.xlsx', merge_cells=False)
     df.to_pickle(sdffile + '.pkl')
     print(df.info())
