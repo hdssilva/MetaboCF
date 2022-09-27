@@ -6,7 +6,7 @@ from rdkit.Chem.rdmolfiles import MolFromSmiles, MolFromMolBlock
 from rdkit import Chem
 from tqdm import tqdm
 
-#This function separates metabolites in the xml
+#This function separates metabolites in the xml 
 def generate_xml_chunks(xmlfile):
     reading = False
     for line in xmlfile:
