@@ -1,0 +1,140 @@
+Level,Classifier,RF (Feature Selection),RF (class_weight),RF (criterion),RF (max_features),KNN (Feature Selection),KNN (n_neighbors),KNN (weights),KNN (metric),LR (Feature Selection),LR (penalty),LR (C),LR (l1_ratio),LR (fit_intercept),LR (class_weight),LR (solver),LR (multi_class),SVM (Feature Selection),SVM (penalty),SVM (C),SVM (class_weight),NB (Feature Selection),NB (alpha),NB (norm)
+Kingdom,Chemical entities,No,balanced,entropy,80,No,27,distance,manhattan,No,l1,0.1,,False,,saga,ovr,No,l2,10.0,,No,10.0,False
+Superclass,Inorganic compounds,No,balanced,gini,20,No,3,uniform,cosine,No,l1,100.0,,False,balanced,saga,multinomial,No,l1,100.0,balanced,No,0.1,False
+Superclass,Organic compounds,Yes,,gini,1,No,7,distance,manhattan,No,none,,,False,,sag,multinomial,No,l1,100.0,balanced,No,0.01,False
+Class,Alkaloids and derivatives,Yes,,gini,13,Yes,1,uniform,euclidean,No,none,,,False,balanced,sag,multinomial,No,l1,100.0,balanced,No,0.0001,False
+Class,Benzenoids,Yes,balanced_subsample,entropy,34,Yes,1,uniform,euclidean,No,none,,,False,balanced,sag,multinomial,No,l1,100.0,balanced,No,1.0,False
+Class,Homogeneous metal compounds,No,,gini,1,No,1,uniform,manhattan,No,elasticnet,100.0,0.75,True,balanced,saga,multinomial,No,l2,100.0,balanced,No,1e-05,False
+Class,Homogeneous non-metal compounds,No,balanced_subsample,entropy,20,No,4,distance,cosine,No,none,,,True,balanced,sag,ovr,Yes,l1,100.0,balanced,No,1e-05,False
+Class,Hydrocarbon derivatives,Yes,balanced,gini,1,Yes,2,uniform,manhattan,Yes,none,,,True,,sag,multinomial,No,l2,0.01,balanced,No,1e-05,True
+Class,Hydrocarbons,No,balanced,entropy,110,Yes,4,uniform,manhattan,No,l1,100.0,,True,balanced,saga,multinomial,No,l1,100.0,balanced,No,0.0001,True
+Class,"Lignans, neolignans and related compounds",No,,entropy,100,No,4,distance,cosine,No,l1,100.0,,False,balanced,saga,ovr,No,l2,100.0,balanced,No,0.001,False
+Class,Lipids and lipid-like molecules,Yes,,entropy,23,Yes,2,uniform,euclidean,No,none,,,False,,sag,multinomial,No,l2,100.0,balanced,Yes,0.1,False
+Class,Mixed metal/non-metal compounds,No,,gini,7,Yes,1,uniform,cosine,No,l1,100.0,,False,balanced,saga,multinomial,Yes,l1,10.0,balanced,No,1e-05,False
+Class,"Nucleosides, nucleotides, and analogues",Yes,balanced_subsample,entropy,27,No,4,distance,cosine,No,none,,,False,balanced,sag,multinomial,No,l1,100.0,balanced,No,0.1,False
+Class,"Organic 1,3-dipolar compounds",No,,gini,7,No,1,uniform,euclidean,No,elasticnet,10.0,0.75,False,balanced,saga,multinomial,Yes,l1,100.0,,No,1e-05,False
+Class,Organic Polymers,No,,gini,1,No,1,uniform,manhattan,No,l1,1.0,,True,balanced,saga,ovr,No,l1,0.1,balanced,Yes,1.0,False
+Class,Organic acids and derivatives,Yes,,entropy,26,Yes,4,distance,manhattan,No,elasticnet,10.0,0.5,False,balanced,saga,multinomial,No,l1,100.0,balanced,No,1e-05,False
+Class,Organic oxygen compounds,Yes,balanced,entropy,16,No,3,distance,cosine,No,l1,10.0,,False,,saga,multinomial,No,l1,1.0,balanced,No,1e-05,True
+Class,Organohalogen compounds,No,,gini,2,Yes,2,distance,cosine,No,none,,,False,,sag,multinomial,No,l1,100.0,balanced,No,1e-05,True
+Class,Organoheterocyclic compounds,No,balanced_subsample,entropy,100,Yes,12,distance,cosine,No,none,,,False,balanced,sag,multinomial,No,l1,100.0,balanced,No,0.001,False
+Class,Organometallic compounds,No,,entropy,50,No,3,distance,manhattan,Yes,l2,0.01,,False,balanced,sag,ovr,No,l1,10.0,,No,1e-05,False
+Class,Organophosphorus compounds,No,balanced,gini,7,No,16,distance,cosine,No,l1,100.0,,False,balanced,saga,ovr,No,l1,100.0,,No,1e-05,False
+Class,Organosulfur compounds,Yes,balanced,entropy,20,Yes,7,distance,manhattan,No,none,,,False,balanced,sag,multinomial,No,l1,100.0,balanced,No,0.001,False
+Class,Phenylpropanoids and polyketides,No,,gini,2,No,2,distance,cosine,No,none,,,False,,sag,multinomial,No,l1,100.0,balanced,No,0.01,False
+Subclass,5'-deoxyribonucleosides,No,,gini,3,No,16,distance,euclidean,No,l1,10.0,,True,balanced,saga,ovr,No,l1,10.0,,No,0.01,False
+Subclass,Alkali metal oxoanionic compounds,No,balanced,entropy,70,No,3,distance,manhattan,No,elasticnet,100.0,0.75,True,balanced,saga,ovr,No,l1,10.0,balanced,No,1e-05,False
+Subclass,Alkali metal salts,No,,gini,3,Yes,8,uniform,cosine,Yes,elasticnet,1.0,0.5,False,balanced,saga,multinomial,No,l2,0.1,balanced,Yes,1.0,False
+Subclass,Alkaline earth metal oxoanionic compounds,No,,gini,3,No,9,distance,manhattan,Yes,none,,,False,balanced,saga,ovr,No,l1,100.0,balanced,No,1e-05,True
+Subclass,Alkyl halides,No,,gini,1,No,5,distance,manhattan,No,elasticnet,100.0,0.25,True,balanced,saga,multinomial,No,l1,10.0,,Yes,0.01,True
+Subclass,Amaryllidaceae alkaloids,No,balanced_subsample,entropy,20,No,3,uniform,manhattan,Yes,l2,0.01,,True,balanced,sag,multinomial,No,l2,100.0,,No,1e-05,True
+Subclass,Anthracenes,Yes,,entropy,2,Yes,12,distance,cosine,No,none,,,False,balanced,sag,multinomial,No,l1,10.0,balanced,Yes,1e-05,False
+Subclass,Aryl halides,No,,entropy,1,Yes,1,uniform,manhattan,Yes,elasticnet,100.0,0.25,False,balanced,saga,ovr,No,l2,0.1,balanced,Yes,1e-05,False
+Subclass,Azoles,Yes,,entropy,17,Yes,5,distance,manhattan,No,none,,,False,balanced,saga,multinomial,Yes,l1,100.0,balanced,No,0.1,False
+Subclass,Azolidines,Yes,balanced,entropy,13,Yes,3,uniform,manhattan,Yes,none,,,False,balanced,sag,ovr,Yes,l1,100.0,balanced,No,1e-05,False
+Subclass,Azolines,Yes,,entropy,8,Yes,1,uniform,manhattan,No,none,,,False,balanced,sag,multinomial,Yes,l2,100.0,,Yes,0.1,False
+Subclass,Benzazepines,Yes,,gini,5,Yes,1,uniform,manhattan,No,none,,,False,,sag,ovr,No,l1,100.0,,No,0.1,True
+Subclass,Benzene and substituted derivatives,No,balanced,entropy,90,Yes,16,distance,cosine,No,none,,,False,balanced,sag,multinomial,No,l1,100.0,balanced,Yes,0.1,True
+Subclass,Benzimidazoles,Yes,,gini,8,No,2,distance,manhattan,No,none,,,False,balanced,saga,multinomial,Yes,l1,100.0,balanced,Yes,1e-05,False
+Subclass,Benzodiazepines,No,balanced,entropy,90,No,4,distance,cosine,No,none,,,True,balanced,saga,multinomial,No,l1,100.0,balanced,No,1e-05,True
+Subclass,Benzodioxanes,No,balanced,gini,2,No,3,uniform,manhattan,No,none,,,True,balanced,sag,multinomial,No,l1,100.0,,Yes,0.01,False
+Subclass,Benzofurans,Yes,balanced_subsample,entropy,8,Yes,3,uniform,euclidean,No,elasticnet,10.0,0.75,False,balanced,saga,ovr,Yes,l1,100.0,balanced,No,0.1,True
+Subclass,Benzophenanthridine alkaloids,Yes,,gini,2,Yes,2,uniform,cosine,No,l1,100.0,,False,balanced,saga,ovr,No,l1,10.0,,No,1e-05,False
+Subclass,Benzopyrans,Yes,balanced_subsample,entropy,23,Yes,1,uniform,cosine,No,none,,,True,,sag,multinomial,No,l1,100.0,balanced,No,1e-05,True
+Subclass,Benzothiazepines,No,balanced,gini,1,No,1,uniform,euclidean,Yes,none,,,False,,sag,ovr,No,l1,100.0,,Yes,1.0,False
+Subclass,Benzothiazines,Yes,balanced_subsample,entropy,3,Yes,2,uniform,manhattan,Yes,none,,,True,balanced,sag,ovr,No,l1,100.0,,No,0.01,False
+Subclass,Benzothiophenes,No,,gini,7,No,5,uniform,manhattan,No,l1,100.0,,False,balanced,saga,ovr,No,l1,10.0,balanced,No,1e-05,True
+Subclass,Benzoxazines,No,,entropy,70,No,1,uniform,euclidean,Yes,none,,,False,,sag,multinomial,No,l1,10.0,,No,0.001,False
+Subclass,Benzoxazoles,Yes,,entropy,13,No,17,distance,manhattan,No,l1,100.0,,True,balanced,saga,ovr,Yes,l1,100.0,balanced,No,1e-05,False
+Subclass,Benzoxepines,No,,gini,1,Yes,11,distance,manhattan,No,elasticnet,100.0,0.5,False,balanced,saga,multinomial,Yes,l2,100.0,balanced,Yes,0.01,False
+Subclass,Carboximidic acids and derivatives,Yes,balanced,gini,2,No,1,uniform,euclidean,Yes,none,,,False,,sag,ovr,No,l1,100.0,balanced,Yes,0.0001,False
+Subclass,Carboxylic acids and derivatives,Yes,,gini,9,No,4,distance,manhattan,No,none,,,False,,sag,multinomial,No,l1,100.0,balanced,No,1e-05,False
+Subclass,Cinnamic acids and derivatives,Yes,balanced,entropy,9,Yes,7,uniform,manhattan,No,none,,,False,,sag,multinomial,No,l1,10.0,balanced,No,1e-05,False
+Subclass,Coumarins and derivatives,Yes,,entropy,14,Yes,7,distance,cosine,No,none,,,True,balanced,saga,ovr,No,l2,100.0,balanced,No,1e-05,False
+Subclass,Diarylheptanoids,Yes,balanced,gini,1,No,4,uniform,euclidean,No,l1,100.0,,True,balanced,saga,ovr,No,l1,10.0,balanced,Yes,0.1,False
+Subclass,Diazanaphthalenes,Yes,,entropy,1,No,1,uniform,cosine,Yes,l2,1.0,,False,balanced,sag,ovr,No,l2,0.01,balanced,No,0.01,False
+Subclass,Diazines,No,balanced_subsample,entropy,50,Yes,1,uniform,euclidean,No,l2,0.1,,False,balanced,sag,multinomial,No,l2,10.0,balanced,No,0.0001,True
+Subclass,Dibenzylbutane lignans,Yes,balanced,gini,1,Yes,3,uniform,cosine,Yes,elasticnet,100.0,0.75,False,balanced,saga,multinomial,No,l2,10.0,balanced,No,0.001,False
+Subclass,Dihydrofurans,No,,gini,1,Yes,4,uniform,euclidean,No,l1,100.0,,True,,saga,ovr,No,l1,100.0,,No,1e-05,True
+Subclass,Dioxanes,No,,entropy,20,No,1,uniform,euclidean,No,none,,,True,balanced,sag,ovr,No,l2,100.0,balanced,No,1e-05,True
+Subclass,Epoxides,Yes,,gini,9,Yes,3,uniform,cosine,Yes,none,,,False,balanced,sag,ovr,Yes,l1,100.0,balanced,No,0.001,False
+Subclass,Ergoline and derivatives,No,,gini,1,Yes,3,uniform,euclidean,No,none,,,True,,sag,ovr,No,l1,100.0,,Yes,0.1,False
+Subclass,Fatty Acyls,Yes,balanced,entropy,19,Yes,16,distance,cosine,No,none,,,False,balanced,sag,multinomial,No,l1,100.0,balanced,No,1.0,False
+Subclass,Flavonoids,No,,entropy,120,No,16,distance,cosine,No,none,,,True,,sag,multinomial,No,l1,100.0,balanced,No,0.01,False
+Subclass,Furanoid lignans,No,,entropy,133,Yes,1,uniform,manhattan,No,none,,,False,,sag,ovr,No,l1,100.0,,Yes,1e-05,True
+Subclass,Furans,Yes,,gini,10,Yes,5,uniform,cosine,Yes,none,,,False,balanced,sag,ovr,No,l2,100.0,balanced,No,0.01,False
+Subclass,Glycerolipids,Yes,,entropy,9,Yes,7,uniform,manhattan,No,none,,,False,,sag,multinomial,Yes,l1,100.0,balanced,No,0.01,False
+Subclass,Glycerophospholipids,Yes,,entropy,8,No,16,distance,manhattan,No,elasticnet,100.0,0.75,False,balanced,saga,multinomial,No,l2,100.0,balanced,No,0.01,False
+Subclass,Halogen organides,No,,gini,3,No,2,uniform,cosine,No,l1,100.0,,False,,saga,ovr,No,l1,100.0,,No,0.0001,True
+Subclass,Halohydrins,No,,gini,10,No,2,uniform,manhattan,No,elasticnet,1.0,0.25,False,balanced,saga,ovr,No,l2,0.01,balanced,Yes,0.01,True
+Subclass,Homoisoflavonoids,No,,gini,1,No,12,distance,cosine,Yes,none,,,True,,saga,ovr,Yes,l2,1.0,balanced,Yes,1e-05,False
+Subclass,Hydroxy acids and derivatives,Yes,,entropy,13,No,2,uniform,manhattan,No,none,,,False,,sag,multinomial,Yes,l1,100.0,balanced,Yes,0.1,False
+Subclass,Indanes,No,,entropy,10,Yes,1,uniform,euclidean,Yes,none,,,False,,saga,ovr,No,l1,100.0,,Yes,0.1,False
+Subclass,Indoles and derivatives,Yes,balanced_subsample,entropy,4,Yes,21,distance,cosine,No,none,,,False,balanced,saga,multinomial,No,l1,100.0,balanced,No,1e-05,False
+Subclass,Isoflavonoids,No,,gini,1,Yes,30,distance,cosine,Yes,l1,100.0,,True,balanced,saga,multinomial,No,l1,100.0,balanced,No,1e-05,False
+Subclass,Isoindoles and derivatives,Yes,,gini,2,No,4,uniform,manhattan,No,none,,,False,,sag,ovr,No,l1,100.0,,Yes,0.01,True
+Subclass,Isoquinolines and derivatives,Yes,,gini,11,No,1,uniform,cosine,No,none,,,False,balanced,sag,ovr,No,l1,100.0,balanced,No,1e-05,False
+Subclass,Keto acids and derivatives,Yes,,entropy,16,No,3,distance,cosine,Yes,none,,,False,,saga,multinomial,No,l1,100.0,balanced,No,1e-05,False
+Subclass,Lactones,No,,gini,3,Yes,5,distance,cosine,No,l2,10.0,,False,balanced,sag,ovr,No,l1,100.0,,No,0.001,False
+Subclass,Lignan lactones,No,,gini,1,No,2,uniform,manhattan,No,l1,100.0,,True,,saga,ovr,No,l1,10.0,,No,1e-05,False
+Subclass,"Linear 1,3-diarylpropanoids",Yes,,entropy,17,Yes,1,uniform,cosine,Yes,elasticnet,100.0,0.5,False,balanced,saga,ovr,No,l1,100.0,balanced,Yes,1e-05,False
+Subclass,Lupin alkaloids,No,balanced,entropy,70,Yes,18,distance,manhattan,Yes,none,,,False,,sag,ovr,Yes,l1,100.0,,No,0.0001,False
+Subclass,Macrolides and analogues,No,,entropy,70,No,2,uniform,manhattan,No,none,,,False,balanced,sag,ovr,No,l1,100.0,balanced,No,0.0001,False
+Subclass,Metalloid organides,No,,gini,1,No,6,uniform,euclidean,No,l1,100.0,,False,,saga,multinomial,No,l1,100.0,,No,1e-05,False
+Subclass,Miscellaneous mixed metal/non-metals,Yes,,gini,13,Yes,20,distance,manhattan,No,l1,100.0,,False,balanced,saga,ovr,No,l1,100.0,,No,1e-05,False
+Subclass,Naphthalenes,Yes,,gini,10,No,17,distance,manhattan,No,none,,,False,balanced,sag,multinomial,No,l1,100.0,balanced,No,1e-05,False
+Subclass,Naphthopyrans,No,balanced,gini,2,No,4,uniform,cosine,No,l1,100.0,,True,,saga,multinomial,No,l1,10.0,,Yes,0.1,False
+Subclass,Neoflavonoids,Yes,,gini,5,Yes,5,uniform,euclidean,Yes,none,,,False,,sag,multinomial,No,l1,100.0,balanced,No,0.01,True
+Subclass,Non-metal oxoanionic compounds,No,balanced,entropy,120,No,1,uniform,manhattan,No,none,,,False,balanced,saga,ovr,No,l2,100.0,balanced,No,1e-05,True
+Subclass,Nucleoside and nucleotide analogues,No,,entropy,7,Yes,11,distance,cosine,No,none,,,True,,sag,multinomial,No,l1,10.0,,Yes,0.1,False
+Subclass,Organic carbonic acids and derivatives,Yes,balanced_subsample,entropy,4,No,4,distance,manhattan,Yes,none,,,False,balanced,sag,ovr,Yes,l1,100.0,,No,0.001,True
+Subclass,Organic disulfides,No,,gini,2,No,1,uniform,euclidean,No,l1,10.0,,True,balanced,saga,ovr,No,l1,100.0,,Yes,1e-05,False
+Subclass,Organic metal salts,No,,gini,10,No,2,uniform,manhattan,No,l1,1.0,,True,balanced,saga,ovr,No,l1,1.0,balanced,No,0.0001,True
+Subclass,Organic oxoanionic compounds,No,,gini,2,No,4,distance,manhattan,Yes,none,,,True,balanced,sag,multinomial,No,l2,100.0,,No,0.001,False
+Subclass,Organic phosphonic acids and derivatives,No,balanced,gini,5,Yes,2,uniform,manhattan,Yes,l1,10.0,,True,balanced,saga,ovr,Yes,l1,100.0,,Yes,0.1,True
+Subclass,Organic phosphoric acids and derivatives,Yes,balanced_subsample,entropy,3,Yes,7,distance,manhattan,No,none,,,False,balanced,sag,ovr,No,l1,100.0,,No,0.01,False
+Subclass,Organic sulfuric acids and derivatives,No,balanced,entropy,90,No,3,uniform,euclidean,No,none,,,False,,sag,multinomial,No,l1,100.0,balanced,No,1e-05,False
+Subclass,Organometalloid compounds,No,,gini,3,No,1,uniform,manhattan,No,l1,1.0,,True,balanced,saga,ovr,No,l1,1.0,,No,1e-05,True
+Subclass,Organonitrogen compounds,Yes,balanced_subsample,entropy,17,Yes,1,uniform,manhattan,No,none,,,False,,sag,multinomial,No,l1,100.0,balanced,No,0.01,False
+Subclass,Organooxygen compounds,No,balanced,entropy,30,No,9,distance,manhattan,No,none,,,False,,sag,multinomial,No,l1,1.0,balanced,Yes,0.1,True
+Subclass,Other non-metal organides,Yes,,gini,5,No,7,uniform,cosine,No,l1,100.0,,False,balanced,saga,ovr,No,l1,10.0,balanced,Yes,1e-05,False
+Subclass,Peptidomimetics,No,,entropy,120,No,11,distance,cosine,No,l1,100.0,,False,,saga,multinomial,No,l2,100.0,balanced,No,1e-05,False
+Subclass,Phenanthrenes and derivatives,Yes,,entropy,10,Yes,6,uniform,cosine,No,none,,,False,balanced,saga,ovr,No,l1,100.0,balanced,Yes,1e-05,False
+Subclass,Phenol ethers,No,balanced_subsample,entropy,80,Yes,8,distance,manhattan,No,none,,,False,balanced,saga,ovr,Yes,l1,100.0,balanced,No,0.001,True
+Subclass,Phenols,Yes,balanced,entropy,2,Yes,23,distance,cosine,No,none,,,False,,saga,multinomial,No,l1,100.0,balanced,Yes,0.001,False
+Subclass,Piperidines,Yes,,entropy,6,No,9,distance,cosine,No,l1,100.0,,False,,saga,multinomial,Yes,l1,100.0,balanced,Yes,1.0,False
+Subclass,Post-transition metal salts,No,,gini,5,No,4,distance,manhattan,No,l1,100.0,,True,,saga,ovr,No,l1,10.0,,No,1e-05,True
+Subclass,Prenol lipids,No,,entropy,20,Yes,4,uniform,manhattan,No,none,,,False,,sag,multinomial,No,l1,100.0,,No,0.01,False
+Subclass,Pteridines and derivatives,Yes,balanced_subsample,entropy,2,Yes,2,uniform,manhattan,Yes,none,,,False,,sag,ovr,Yes,l1,100.0,balanced,No,0.0001,True
+Subclass,Purine nucleosides,Yes,,entropy,1,Yes,5,distance,manhattan,Yes,l1,100.0,,True,balanced,saga,multinomial,Yes,l2,100.0,balanced,No,0.01,False
+Subclass,Purine nucleotides,No,balanced,entropy,60,Yes,1,uniform,euclidean,No,none,,,False,,saga,multinomial,No,l2,100.0,balanced,No,0.01,False
+Subclass,Pyrans,Yes,,gini,15,No,4,distance,manhattan,Yes,l1,100.0,,True,balanced,saga,multinomial,Yes,l1,10.0,,No,0.01,False
+Subclass,Pyrazolopyrimidines,No,,gini,133,Yes,9,uniform,cosine,No,elasticnet,10.0,0.5,True,balanced,saga,multinomial,No,l2,100.0,,No,0.001,False
+Subclass,Pyrenes,No,,gini,7,No,5,distance,cosine,No,none,,,False,,sag,multinomial,No,l1,100.0,,No,0.1,False
+Subclass,Pyridines and derivatives,Yes,balanced,entropy,27,Yes,9,distance,cosine,No,l1,100.0,,False,balanced,saga,multinomial,No,l1,100.0,balanced,No,1e-05,False
+Subclass,Pyridopyrimidines,No,balanced,entropy,40,No,10,uniform,euclidean,Yes,l1,100.0,,False,balanced,saga,ovr,No,l2,100.0,,No,0.001,False
+Subclass,Pyrimidine nucleosides,Yes,,gini,10,Yes,1,uniform,euclidean,No,none,,,False,balanced,sag,ovr,No,l1,100.0,balanced,No,1e-05,True
+Subclass,Pyrimidine nucleotides,Yes,,entropy,6,No,15,distance,cosine,Yes,l1,100.0,,True,,saga,multinomial,Yes,l1,100.0,balanced,No,1e-05,False
+Subclass,Pyrroles,No,,entropy,3,No,11,distance,manhattan,No,none,,,True,balanced,saga,multinomial,No,l1,1.0,balanced,Yes,0.1,False
+Subclass,Pyrrolidines,No,,entropy,120,No,11,distance,cosine,No,none,,,False,balanced,sag,multinomial,No,l1,100.0,balanced,No,0.01,False
+Subclass,Pyrrolines,No,,gini,7,No,6,uniform,manhattan,No,none,,,True,,sag,ovr,No,l2,100.0,balanced,No,1e-05,True
+Subclass,Pyrrolopyrimidines,No,,gini,1,No,3,uniform,manhattan,No,elasticnet,100.0,0.25,True,balanced,saga,multinomial,No,l2,100.0,balanced,No,1e-05,False
+Subclass,Quinolines and derivatives,Yes,,entropy,8,No,12,distance,cosine,No,none,,,False,balanced,sag,multinomial,Yes,l1,100.0,balanced,Yes,0.001,False
+Subclass,Saccharolipids,No,,entropy,2,No,21,distance,cosine,Yes,none,,,True,balanced,saga,multinomial,No,l1,100.0,balanced,Yes,0.001,False
+Subclass,Saturated hydrocarbons,No,balanced,entropy,120,Yes,25,uniform,manhattan,No,none,,,False,balanced,sag,multinomial,No,l1,100.0,,No,1e-05,True
+Subclass,Sphingolipids,Yes,balanced,gini,1,No,7,distance,manhattan,No,l1,10.0,,True,,saga,ovr,No,l1,1.0,,Yes,0.1,True
+Subclass,Steroids and steroid derivatives,Yes,,gini,3,Yes,7,distance,cosine,No,none,,,False,balanced,saga,multinomial,No,l1,100.0,balanced,Yes,0.1,False
+Subclass,Stilbenes,No,balanced,entropy,110,Yes,2,distance,manhattan,No,none,,,False,,sag,multinomial,No,l1,10.0,balanced,No,0.01,False
+Subclass,Tannins,No,balanced,entropy,60,Yes,1,uniform,cosine,No,none,,,False,balanced,sag,ovr,No,l1,100.0,balanced,No,0.01,False
+Subclass,Tetrahydroisoquinolines,No,,gini,1,Yes,4,uniform,manhattan,Yes,elasticnet,100.0,0.25,True,balanced,saga,multinomial,No,l1,10.0,,No,0.01,False
+Subclass,Tetrapyrroles and derivatives,Yes,,gini,11,Yes,3,distance,manhattan,No,l1,100.0,,False,balanced,saga,ovr,No,l1,100.0,balanced,Yes,0.1,False
+Subclass,Thioethers,Yes,,gini,4,Yes,3,uniform,manhattan,No,l1,10.0,,True,balanced,saga,ovr,No,l1,10.0,,No,0.0001,True
+Subclass,Thiophenes,Yes,,entropy,7,No,4,distance,manhattan,Yes,none,,,False,balanced,sag,ovr,No,l1,100.0,balanced,No,1e-05,False
+Subclass,Transition metal organides,No,,gini,133,No,14,distance,manhattan,No,l1,100.0,,False,balanced,saga,ovr,No,l1,100.0,balanced,No,0.1,True
+Subclass,Transition metal oxoanionic compounds,No,,gini,7,Yes,1,uniform,cosine,Yes,l1,100.0,,False,balanced,saga,ovr,No,l1,100.0,,No,0.01,False
+Subclass,Transition metal salts,No,balanced_subsample,entropy,50,Yes,11,uniform,manhattan,No,l1,1.0,,False,,saga,multinomial,No,l1,1.0,,No,0.001,True
+Subclass,Triazines,Yes,balanced,entropy,7,Yes,1,uniform,euclidean,Yes,elasticnet,100.0,0.25,True,balanced,saga,ovr,Yes,l1,10.0,balanced,Yes,1e-05,False
+Subclass,Tropane alkaloids,No,balanced_subsample,entropy,10,No,3,distance,manhattan,No,l1,100.0,,True,,saga,ovr,No,l1,10.0,,No,1e-05,True
+Subclass,Tropones,No,,gini,1,No,5,uniform,euclidean,No,l2,10.0,,False,balanced,sag,multinomial,No,l1,10.0,balanced,No,1e-05,True
+Subclass,Unsaturated hydrocarbons,No,,gini,1,Yes,11,distance,manhattan,No,none,,,False,,sag,multinomial,No,l1,100.0,balanced,No,0.01,False
+Subclass,Vinyl halides,No,,gini,5,No,5,distance,manhattan,No,l1,100.0,,True,,saga,ovr,No,l1,10.0,,No,0.0001,True
